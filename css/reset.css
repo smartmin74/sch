@@ -49,6 +49,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
+	font-family: "Pretendard";
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -120,7 +121,6 @@ input[type="text"] { border: inherit; outline: none;}
 input[type="radio"]{display: none;}
 
 /* Normalize */
-body { font-family: 'Noto Sans KR', sans-serif; }
 select { appearance:none;}
 select::-ms-expand { display:none;}
 input[type="search"]::-webkit-search-decoration,

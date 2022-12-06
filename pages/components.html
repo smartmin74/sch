@@ -7,8 +7,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Components</title>
-  <link href="/css/reset.css" rel="stylesheet" />
-  <link href="/css/common.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
 </head>
 <style>
   .common_section {
@@ -51,7 +50,7 @@
         <div>전자계약</div>
         <div>근로계약 조회</div>
       </div>
-      <button class="btn-blue" alt="로그인">Sign In</button>
+      <button class="btn-blue">Sign In</button>
       <button class="btn-table-blue">업로드</button>
       <button class="btn-table-blue" disabled>미리보기</button>
       <button class="btn-gray">발령조회</button>
@@ -60,6 +59,7 @@
       <button class="btn-step-up"></button>
       <button class="btn-step-down"></button>
       <button class="btn-green"><img src="../img/ic_search.svg" alt="검색">조회</button>
+      <button class="btn-down"></button>
     </article>
   </section>
 
@@ -69,6 +69,12 @@
     <article class="common_li">
       <div class="main-logo"></div>
       <span class="ic-home"></span>
+      <span class="ic-mypage"></span>
+      <span class="ic-logout"></span>
+      <div class="myinfo-wrap">
+        <div class="info-picture"></div>
+        <div class="info-name">김희선 <button class="btn-down"></button></div>
+      </div>
     </article>
   </section>
 
@@ -209,6 +215,11 @@
     <h1>작은창들</h1>
     <article class="common_li common_menu_li">
       <div class="card"></div>
+
+      <ul class="profile-box">
+        <li><span class="ic-mypage"></span>마이페이지</li>
+        <li><span class="ic-logout"></span>로그아웃</li>
+      </ul>
     </article>
   </section>
 
