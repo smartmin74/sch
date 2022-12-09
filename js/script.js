@@ -1,8 +1,20 @@
-$(".pagination li").on("click", function(){
-    if($(".pagination li").hasClass("active")){
+
+// pagination
+$(".pagination li").on("click", function () {
+    if ($(".pagination li").hasClass("active")) {
         $(".pagination li").removeClass("active");
         $(this).addClass("active");
-    }else{
+    } else {
         $(this).addClass("active");
+    }
+})
+
+// nav
+$('.nav li').on('click', function () {
+    if ($('.nav li').hasClass('active')) {
+        $('.nav li').removeClass('active');
+        $(this).addClass('active');
+    } else {
+        $(this).addClass('active');
     }
 })
