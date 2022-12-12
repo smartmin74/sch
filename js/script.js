@@ -17,4 +17,11 @@ $('.nav li').on('click', function () {
     } else {
         $(this).addClass('active');
     }
-})
+});
+
+
+// modal
+$('.modal .btn-close').on('click', function () {
+    $('.modal').hide();
+});
+
