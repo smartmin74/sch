@@ -34,9 +34,9 @@
                 <nav class="nav">
                     <ul>
                         <li class="active"><a href="javascript:;"><span class="ic-menu01"></span>근로 계약관리</a></li>
-                        <li><a href="javascript:;"><span class="ic-menu02"></span>서명 날인요청</a></li>
-                        <li><a href="javascript:;"><span class="ic-menu03"></span>서명 진행대기</a></li>
-                        <li><a href="javascript:;"><span class="ic-menu04"></span>계약 만료예정</a></li>
+                        <li><a href="signature_request.html"><span class="ic-menu02"></span>서명 날인요청</a></li>
+                        <li><a href="signature_waiting.html"><span class="ic-menu03"></span>서명 진행대기</a></li>
+                        <li><a href="contract_expiring.html"><span class="ic-menu04"></span>계약 만료예정</a></li>
                         <li><a href="javascript:;"><span class="ic-menu05"></span>계약 체결취소</a></li>
                         <li><a href="javascript:;"><span class="ic-menu06"></span>작업 히스토리</a></li>
                     </ul>
@@ -401,7 +401,7 @@
                                 </div>
                                 <ul class="pagination">
                                     <button class="btn-prev"></button>
-                                    <li>1</li>
+                                    <li class="active">1</li>
                                     <li>2</li>
                                     <li>3</li>
                                     <li>4</li>
@@ -701,9 +701,6 @@
     <script src="../../js/jquery-ui.min.js"></script>
     <script src="../../js/script.js"></script>
     <script>
-        $('.info-name').on('click', function () {
-            $('.profile-box').toggle();
-        });
 
         $('.btn-lookup').on('click', function () {
             $('.modal-appoint-info').show();

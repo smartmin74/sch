@@ -25,3 +25,7 @@ $('.modal .btn-close').on('click', function () {
     $('.modal').hide();
 });
 
+// profile
+$('.info-name').on('click', function () {
+    $('.profile-box').toggle();
+});

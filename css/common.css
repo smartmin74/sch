@@ -1,5 +1,4 @@
-@charset "UTF-8";
-:root { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100%; cursor: default; overflow-wrap: break-word; } 
+@charset "UTF-8";:root { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100%; cursor: default; overflow-wrap: break-word; } 
 
 /* checkbox */
 input[type="checkbox"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; position: relative; width: 20px; height: 20px; cursor: pointer; outline: none !important; border-radius: 4px; background: #DCDFE3 url("../img/ic-checkbox.svg")no-repeat center; } 
@@ -15,7 +14,7 @@ select { width: 100%; height: 44px; padding:0 16px; border: 1px solid #E3E3E6; b
 
 /* table */
 .table-wrapper { width: 100%; overflow-x: auto; border-top: 1px solid #878889; } 
-.table-wrapper.check-table td:first-child{min-width:auto;}
+.table-wrapper.check-table td:first-child { min-width:auto; } 
 .table-wrapper table { width: 100%; } 
 .table-wrapper table tr { height: 40px; border-bottom: 1px solid #E3E3E6; } 
 .table-wrapper table tr th { background: #EFF1F4; padding:10px; position:relative; } 
@@ -39,7 +38,7 @@ select { width: 100%; height: 44px; padding:0 16px; border: 1px solid #E3E3E6; b
 
 /* card */
 .card { padding: 30px; background: #FFFFFF; width: 100%; } 
-
+.info-card { padding: 20px; background: #F7F7F8; border-radius: 8px; } 
 
 /* input */
 input[type="number"] { position: relative; } 
@@ -91,15 +90,15 @@ button { white-space: nowrap; }
 .btn-table-blue { width: 55px; height: 20px; background: #E4F8FB; border-radius: 19px; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 10px; color: #008597; } 
 button:disabled.btn-table-blue { background: #EFF1F4; color: #C3C6C9; } 
 .btn-gray { height: 44px; padding: 8px 20px; background: #EFF1F4; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 16px; color: #363738; font-weight: 400; } 
+.btn-gray:hover { background: #D6D8DD; } 
 .btn-prev { width: 38px; height: 38px; background: #EFF1F4 url(../img/ic_arrow_l.svg)no-repeat center; border: 1px solid #E3E3E6; border-radius: 8px; display: flex; justify-content: center; align-items: center; } 
 .btn-next { width: 38px; height: 38px; background: #EFF1F4 url(../img/ic_arrow_r.svg)no-repeat center; border: 1px solid #E3E3E6; border-radius: 8px; display: flex; justify-content: center; align-items: center; } 
 .btn-step-up { width:8px; height:5px; background: url(../img/ic_step_up.svg)no-repeat center; } 
 .btn-step-down { width:8px; height:5px; background: url(../img/ic_step_down.svg)no-repeat center; } 
 .btn-green { height: 44px; background: #158696; padding: 12px 14px; border-radius: 8px; display: flex; justify-content: center; align-items: center; gap:6px; font-weight: 500; font-size: 16px; color:#fff; } 
-.btn-green 
 .btn-green:hover { background: #0D5F6A; } 
 .btn-down { width:12px; height:6px; background: url(../img/ic_select_arrow_w.svg)no-repeat center; } 
-.btn-close{width:24px; height:24px; background: url(../img/ic_close.svg)no-repeat center;}
+.btn-close { width:24px; height:24px; background: url(../img/ic_close.svg)no-repeat center; } 
 
 /*********** icon ***********/
 .ic-home { content: url(../img/ic_nav_home.svg); width:15px; height:15px; margin-top: 2px; } 
@@ -117,21 +116,23 @@ button:disabled.btn-table-blue { background: #EFF1F4; color: #C3C6C9; }
 .ic-print { content: url(../img/ic_print.svg); width:20px; height:20px; } 
 
 /*********** modal ***********/
-.modal{display:none;position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.3); }
-.modal-cont{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%); width:100%;background-color: #fff;padding: 30px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);}
-.modal-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; } 
-.modal-body { margin:10px 0;} 
-.modal-title { font-weight: 500;font-size: 22px;color: #1B1B1E; } 
-.modal-bottom { display:flex;align-items: center;justify-content: flex-end; } 
+.modal { display:none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.3); } 
+.modal-cont { position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); width:100%; background-color: #fff; padding: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); } 
+.modal-top { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E3E3E6; padding-bottom: 16px; } 
+.modal-body { margin:10px 0; } 
+.modal-title { font-weight: 500; font-size: 22px; color: #1B1B1E; } 
+.modal-bottom { display:flex; align-items: center; justify-content: flex-end; } 
 
 /************ components ***********/
 .main-logo { width: 188px; height: 35px; background: url(../img/main_logo.png)no-repeat center/contain; } 
 
+/* title */
 .content-title { font-weight: 600; font-size: 18px; color: #363738; display: flex; align-items: center; gap:8px; } 
 .content-title::before { content: ''; width:6px; height:6px; border-radius: 1px; background: #24539B; display: inline-block; } 
 
-.fit-content { width:fit-content !important; } 
-input[type="text"].width-414 { width:414px; } 
+.content-list-title { font-weight: 500; font-size: 20px; color: #363738; display: flex; align-items: center; gap:8px; } 
+.content-list-title::before { content: url(../img/ic_list.svg); width:18px; height:18px; display: inline-block; margin-bottom: 10px;} 
+
 /* profile-box */
 .profile-box { display:none; position:absolute; top:40px; left:-8px; width:152px; border: 1px solid #E0DFDF; filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2)); border-radius: 10px; padding:0 10px; background-color: #fff; } 
 .profile-box li { height: 40px; padding:10px 20px; border-bottom: 1px solid #e3e3e6; display: flex; align-items: center; gap:5px; cursor: pointer; } 
@@ -153,3 +154,7 @@ input[type="text"].width-414 { width:414px; }
 .setting-table .row .row-cont.flex-end { justify-content:flex-end; } 
 .setting-table .row .row-cont label { min-width: 100px; } 
 .setting-table .row .row-cont select { width: 100%; } 
+
+
+.fit-content { width:fit-content !important; } 
+input.width-414 { width:414px; } 
