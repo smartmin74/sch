@@ -32,13 +32,13 @@
         <div class="container">
             <aside class="aside">
                 <nav class="nav">
-                    <ul>
+                    <ul class="main-menu">
                         <li class="active"><a href="javascript:;"><span class="ic-menu01"></span>근로 계약관리</a></li>
                         <li><a href="signature_request.html"><span class="ic-menu02"></span>서명 날인요청</a></li>
                         <li><a href="signature_waiting.html"><span class="ic-menu03"></span>서명 진행대기</a></li>
                         <li><a href="contract_expiring.html"><span class="ic-menu04"></span>계약 만료예정</a></li>
-                        <li><a href="javascript:;"><span class="ic-menu05"></span>계약 체결취소</a></li>
-                        <li><a href="javascript:;"><span class="ic-menu06"></span>작업 히스토리</a></li>
+                        <li><a href="contract_cancel.html"><span class="ic-menu05"></span>계약 체결취소</a></li>
+                        <li><a href="work_history.html"><span class="ic-menu06"></span>작업 히스토리</a></li>
                     </ul>
                 </nav>
             </aside>
@@ -83,9 +83,12 @@
                             </div>
                             <div class="row-cont">
                                 <label for="">근무장소</label>
-                                <select name="" id="">
-                                    <option value="">선택</option>
-                                </select>
+                                <div class="button-select">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                    </select>
+                                    <button class="btn-green place-search">찾기</button>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -469,9 +472,12 @@
                         <div class="row">
                             <div class="row-cont">
                                 <label for="">근무장소</label>
-                                <select name="" id="">
-                                    <option value="">선택</option>
-                                </select>
+                                <div class="button-select">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                    </select>
+                                    <button class="btn-green place-search">찾기</button>
+                                </div>
                             </div>
                             <div class="row-cont">
                                 <label for="">전화번호</label>
@@ -689,10 +695,112 @@
                 <button class="btn-close"></button>
             </div>
             <div class="modal-body">
-              
+
             </div>
             <div class="modal-bottom">
                 <button class="btn-green"><span class="ic-print"></span>인쇄</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-work-place">
+        <div class="modal-cont">
+            <div class="modal-top">
+                <p class="modal-title">근무 장소</p>
+                <button class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-table">
+                    <div class="row">
+                        <div class="row-cont">
+                            <label for="">기관</label>
+                            <select name="" id="">
+                                <option value="">서울병원</option>
+                            </select>
+                        </div>
+                        <div class="row-cont">
+                            <label for="">부서명</label>
+                            <input type="text" name="" id="" placeholder="입력">
+                        </div>
+                        <div class="row-cont fit-content">
+                            <button class="btn-green"><span class="ic-search"></span>조회</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrapper check-table">
+                    <table>
+                        <colgroup>
+                        </colgroup>
+                        <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>부서코드</th>
+                            <th>부서명</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                            <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-green"><span class="ic-apply"></span>적용</button>
             </div>
         </div>
     </div>
@@ -708,7 +816,12 @@
 
         $('.preview').on('click', function () {
             $('.modal-contract-preview').show();
+        });
+
+        $('.place-search').on('click', function () {
+            $('.modal-work-place').show();
         })
+      
     </script>
 
 </body>
