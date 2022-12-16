@@ -108,3 +108,14 @@
 .modal-sign-agree .modal-body .agree-checkbox ul li:last-child{margin-bottom: 0;} 
 .modal-sign-agree .modal-bottom { gap:10px; } 
 .modal-sign-agree .modal-bottom button { width:100%; } 
+
+.modal-password-info .modal-cont { width:520px; } 
+.modal-password-info .modal-body p { margin-bottom: 20px; } 
+.modal-password-info .modal-bottom { gap:10px; } 
+.modal-password-info .modal-bottom button { width:100%; }
+
+.modal-password-change .modal-cont { width:520px; } 
+.modal-password-change .password-box {padding:20px  } 
+.modal-password-change .password-box label { font-weight: 500; font-size: 14px; color: #363738; } 
+.modal-password-change .password-box input { margin-top: 6px; margin-bottom: 10px; } 
+.modal-password-change .password-box input:nth-of-type(4) { margin-bottom: 0; } 
