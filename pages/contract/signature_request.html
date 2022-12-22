@@ -34,7 +34,8 @@
                 <nav class="nav">
                     <ul class="main-menu">
                         <li><a href="work_contract.html"><span class="ic-menu01"></span>근로 계약관리</a></li>
-                        <li class="active"><a href="signature_request.html"><span class="ic-menu02"></span>서명 날인요청</a></li>
+                        <li class="active"><a href="signature_request.html"><span class="ic-menu02"></span>서명 날인요청</a>
+                        </li>
                         <li><a href="signature_waiting.html"><span class="ic-menu03"></span>서명 진행대기</a></li>
                         <li><a href="contract_expiring.html"><span class="ic-menu04"></span>계약 만료예정</a></li>
                         <li><a href="contract_cancel.html"><span class="ic-menu05"></span>계약 체결취소</a></li>
@@ -313,21 +314,15 @@
                                 Showing <span>1</span> to <span>10</span> of <span>50</span> entries
                             </div>
                             <div class="pagination-wrapper">
-                                <div class="input-step">
-                                    <label for="">Display</label>
-                                    <input type="number" name="" id="">
-                                    <div class="btn-step-wrap">
-                                        <button class="btn-step-up"></button>
-                                        <button class="btn-step-down"></button>
-                                    </div>
-                                </div>
                                 <ul class="pagination">
+                                    <button class="btn-prev-fist"></button>
                                     <button class="btn-prev"></button>
-                                    <li class="active">1</li>
+                                    <li>1</li>
                                     <li>2</li>
                                     <li>3</li>
                                     <li>4</li>
                                     <button class="btn-next"></button>
+                                    <button class="btn-next-last"></button>
                                 </ul>
                             </div>
                         </div>
@@ -363,7 +358,7 @@
                 <button class="btn-close"></button>
             </div>
             <div class="modal-body">
-              
+
             </div>
             <div class="modal-bottom">
                 <button class="btn-green"><span class="ic-print"></span>인쇄</button>
@@ -375,7 +370,7 @@
     <script src="../../js/jquery-ui.min.js"></script>
     <script src="../../js/script.js"></script>
     <script>
-  
+
 
         $('.btn-request').on('click', function () {
             $('.modal-signature-request').show();
