@@ -99,7 +99,7 @@ button:disabled.btn-table-blue { background: #EFF1F4; color: #C3C6C9; }
 .btn-prev { width: 38px; height: 38px; background: #EFF1F4 url(../img/ic_arrow_l.svg)no-repeat center; border: 1px solid #E3E3E6; border-radius: 8px; display: flex; justify-content: center; align-items: center; } 
 .btn-prev-fist { width: 46px; height: 38px; background:  url(../img/ic_arrow_first.svg)no-repeat center;  } 
 .btn-next { width: 38px; height: 38px; background: #EFF1F4 url(../img/ic_arrow_r.svg)no-repeat center; border: 1px solid #E3E3E6; border-radius: 8px; display: flex; justify-content: center; align-items: center; } 
-.btn-next-last { width: 46px; height: 38px; background: #EFF1F4 url(../img/ic_arrow_last.svg)no-repeat center; } 
+.btn-next-last { width: 46px; height: 38px; background: url(../img/ic_arrow_last.svg)no-repeat center; } 
 .btn-step-up { width:8px; height:5px; background: url(../img/ic_step_up.svg)no-repeat center; } 
 .btn-step-down { width:8px; height:5px; background: url(../img/ic_step_down.svg)no-repeat center; } 
 .btn-green { height: 44px; background: #1C9AD6; padding: 12px 14px; border-radius: 8px; display: flex; justify-content: center; align-items: center; gap:6px; font-weight: 500; font-size: 16px; color:#fff; } 
