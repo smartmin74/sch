@@ -119,3 +119,7 @@
 .modal-password-change .password-box label { font-weight: 500; font-size: 14px; color: #363738; } 
 .modal-password-change .password-box input { margin-top: 6px; margin-bottom: 10px; } 
 .modal-password-change .password-box input:nth-of-type(4) { margin-bottom: 0; } 
+
+/* table */
+
+.group-table, .detail-table{display:none;}

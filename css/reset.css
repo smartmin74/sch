@@ -118,7 +118,7 @@ button,
 :disabled { cursor: default; } 
 
 input[type="text"] { border: inherit; outline: none;}
-input[type="radio"]{display: none;}
+/* input[type="radio"]{display: none;} */
 
 /* Normalize */
 select { appearance:none;}

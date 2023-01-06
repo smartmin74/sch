@@ -79,7 +79,8 @@
                 <section class="card">
                     <div class="table-wrap">
                         <div class="table-top">
-                            <div class="content-title">공통코드 리스트<p>(총 <span>2</span> 건)</p></div>
+                            <div class="content-title">공통코드 리스트<p>(총 <span>2</span> 건)</p>
+                            </div>
                             <div class="table-button-wrap">
                             </div>
                         </div>
@@ -266,14 +267,23 @@
                 </section>
                 <section class="card">
                     <div class="table-top">
-                        <p></p>
+                        <div class="radio-wrap">
+                            <div>
+                                <input type="radio" id="code01" name="code" value="그룹코드">
+                                <label for="code01">그룹코드</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="code02" name="code" value="상세코드">
+                                <label for="code02">상세코드</label>
+                            </div>
+                        </div>
                         <div class="table-button-wrap">
                             <button class="btn-gray">신규</button>
                             <button class="btn-gray">저장</button>
                             <button class="btn-gray">삭제</button>
                         </div>
                     </div>
-                    <div class="setting-table">
+                    <div class="setting-table group-table">
                         <div class="row">
                             <div class="row-cont">
                                 <label for="">그룹코드</label>
@@ -283,43 +293,43 @@
                                 <label for="">그룹코드명</label>
                                 <input type="text" name="" id="">
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">설명</label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">사용</label>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-table detail-table">
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">그룹코드명</label>
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                </select>
+                            </div>
                             <div class="row-cont">
                                 <label for="">상세코드</label>
                                 <input type="text" name="" id="">
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="row-cont">
                                 <label for="">상세코드명</label>
                                 <input type="text" name="" id="">
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="row-cont">
                                 <label for="">상세순서</label>
                                 <input type="text" name="" id="">
                             </div>
                             <div class="row-cont">
-                                <label for="">값1</label>
-                                <input type="text" name="" id="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row-cont">
-                                <label for="">값2</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="row-cont">
-                                <label for="">값3</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="row-cont">
-                                <label for="">값4</label>
-                                <input type="text" name="" id="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row-cont">
                                 <label for="">설명</label>
-                                <input type="text" name="" id="" placeholder="입력" class="width-955">
+                                <input type="text" name="" id="">
                             </div>
                             <div class="row-cont">
                                 <label for="">사용</label>
@@ -334,15 +344,23 @@
 
     <!-- modal -->
 
-
-
-
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/jquery-ui.min.js"></script>
     <script src="../../js/script.js"></script>
     <script>
 
+        $("input[name='code']").change(function () {
 
+            if ($("input[name='code']:checked").val() == '그룹코드') {
+                $('.detail-table').hide();
+                $('.group-table').show();
+
+            } else if ($("input[name='code']:checked").val() == '상세코드') {
+                $('.group-table').hide();
+                $('.detail-table').show();
+
+            }
+        });
 
     </script>
 
