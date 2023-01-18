@@ -148,6 +148,7 @@ button:disabled.btn-table-blue { background: #EFF1F4; color: #C3C6C9; }
 
 /************ components ***********/
 .main-logo { width: 188px; height: 35px; background: url(../img/main_logo.png)no-repeat center/contain; } 
+.main-logo-b { width: 187px; height: 35px; background: url(../img/logo_b.svg)no-repeat center/contain; } 
 
 /* title */
 .content-title { font-weight: 600; font-size: 18px; color: #363738; display: flex; align-items: center; gap:8px; } 
